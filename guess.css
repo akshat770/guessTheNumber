@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#wrapper {
+  background: #2e2e2e;
+  padding: 40px 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 26px;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#guessField {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background: #1e1e1e;
+  color: white;
+}
+
+#subt {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  background-color: #00ffff;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: background-color 0.3s;
+}
+
+#subt:hover {
+  background-color: #00dddd;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.lastResult, .remaining {
+  background-color: #3b3b3b;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.guesses {
+  font-weight: normal;
+  color: #ffdf00;
+}
+
+.lowOrHigh h2 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ffcc00;
+}
+
+.resultParas .button h2 {
+  margin-top: 20px;
+  background-color: #00ffff;
+  color: black;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resultParas .button h2:hover {
+  background-color: #00dddd;
+}

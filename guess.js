@@ -51,9 +51,9 @@ function checkGuess(guessValue) {
 
 function displayGuess(guessValue) {
     Input.value = '';
-    guessDisplay.innerHTML += `${guessValue} , `; // ✅ updated to use the correct element
+    guessDisplay.innerHTML += `${guessValue}  `; // ✅ updated to use the correct element
     numGuess++;
-    remaining.innerHTML = `${11 - numGuess}`;
+    remaining.innerHTML = `Guess Remaining: ${11 - numGuess}`;
 }
 
 function displayMessage(Message) {
@@ -76,8 +76,8 @@ function newGame() {
         randomNum = parseInt(Math.random() * 100 + 1);
         prevGuess = [];
         numGuess = 1;
-        guessDisplay.innerHTML = '<strong>Previous Guesses:</strong>'; // ✅ updated variable
-        remaining.innerHTML = `${11 - numGuess}`;
+        guessDisplay.innerHTML = '<strong>Previous Guesses: </strong>'; // ✅ updated variable
+        remaining.innerHTML = `Guess Remaining: ${11 - numGuess}`;
         Input.removeAttribute('disabled');
         startOver.removeChild(p);
         playGame = true;
